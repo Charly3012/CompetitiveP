@@ -16,7 +16,7 @@ int main()
 
     cin >> n >> d; // leer numero de semaforos y distancia
 
-    while (semaforo == 1 && contador != d)
+    while (contador != n)
     {
         cin >> x >> a >> g >> r;
         semaforo = iteradorSemaforo(x, a, g, r, d);
@@ -29,7 +29,7 @@ int main()
     }
     else
     {
-        cout << "NOT" << endl;
+        cout << "NO" << endl;
     }
 
     return 0;

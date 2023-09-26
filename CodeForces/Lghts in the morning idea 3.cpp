@@ -20,10 +20,10 @@ int main()
     for (int i = 0; i < n; i++)
     {
         control = individualCheck(n, d);
-        if (control == false)
+        /*if (control == false)
         {
             break;
-        }
+        }*/
     }
 
     if (control == false)
@@ -57,30 +57,37 @@ bool individualCheck(int n, int d)
     }
     else
     {
-        bool bandera = true;
-        int c = a;
-        while (c <= d)
+        int contador = 0;
+        bool semaforo = true;
+        while (contador != n)
         {
-
-            if (bandera == true)
-            {
-                if (c <= x)
-                {
-                    return true;
-                }
-
-                c = c + g;
-                bandera = false;
-            }
-            else
-            {
-                if (c <= x)
-                {
-                    return false;
-                }
-                c = c + r;
-                bandera = true;
-            }
+            cin >> x >> a >> g >> r;
+            semaforo = iteradorSemaforo(x, a, g, r);
+            contador++;
         }
     }
+}
+
+bool iteradorSemaforo(int x, int a, int g, int r)
+{
+    bool control = true; // Determina el estado del semaforo 1 = verde y 0 = rojo
+    int paso = 0;        // Para determinar que estado de la sucesión sigue
+
+    for (int j = 1; j < x;)
+    {
+        if (paso == 0)
+        {
+            j = j + g;
+            paso = 1;
+            control = true;
+        }
+        else
+        {
+            j = j + r;
+            paso = 0;
+            control = false;
+        }
+    }
+
+    return control;
 }

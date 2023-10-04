@@ -1,5 +1,8 @@
+// Nota: esta respuesta tiene un estatus TLE en omega up pero el resultado para todos los casos es valido
+
 #include <bits/stdc++.h>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -12,7 +15,9 @@ int main()
     cout.tie(NULL);
 
     int n, m;
-    vector<int> nv, mv;
+    vector<int> nv; // Doors
+    vector<int> mv; // Keys
+    vector<int> resultado;
 
     cin >> n;
     nv = pedirDatos(n);
@@ -21,10 +26,22 @@ int main()
 
     for (int i = 0; i < mv.size(); i++)
     {
-        for (int k = 0; k < nv.size(); k++)
+
+        vector<int>::iterator f = find(nv.begin(), nv.end(), mv.at(i));
+        if (f != nv.end())
         {
-            if ()
+            int temp = (f - nv.begin());
+            resultado.emplace_back(temp + 1);
         }
+        else
+        {
+            resultado.emplace_back(0);
+        }
+    }
+
+    for (int i = 0; i < resultado.size(); i++)
+    {
+        cout << resultado.at(i) << " ";
     }
 
     return 0;

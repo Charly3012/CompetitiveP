@@ -8,13 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-<<<<<<< HEAD
-      "cwd": "c:/Repositorios/CompetitiveP",
-      "program": "c:/Repositorios/CompetitiveP/build/Debug/outDebug",
-=======
       "cwd": "e:/Repositorios/CompetitiveP",
       "program": "e:/Repositorios/CompetitiveP/build/Debug/outDebug",
->>>>>>> 7d25fb5e33fc9cf9a48944883b62d7da8d4de53c
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

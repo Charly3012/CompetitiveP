@@ -2,8 +2,6 @@
 #include <vector>
 
 using namespace std;
-vector<int> frente(vector<int> v, int k);
-vector<int> atras(vector<int> v, int k);
 
 int main()
 {

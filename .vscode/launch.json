@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Repositorios/CompetitiveP/CodeForces",
-      "program": "c:/Repositorios/CompetitiveP/CodeForces/build/Debug/outDebug",
+      "cwd": "c:/Repositorios/CompetitiveP",
+      "program": "c:/Repositorios/CompetitiveP/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -1,3 +1,6 @@
+// Problema: Triángulo de pascal (Niveles)
+// https://omegaup.com/course/ResolviendoProblemas2021/assignment/P5#problems/Triangulo-de-Pascal-Niveles
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()

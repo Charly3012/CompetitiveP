@@ -1,3 +1,6 @@
+// Risa en vacaciones
+// https://omegaup.com/course/ResolviendoProblemas2021/assignment/P7/#problems/La-Risa-en-Vacaciones
+
 #include <bits/stdc++.h>
 using namespace std;
 

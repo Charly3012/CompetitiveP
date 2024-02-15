@@ -9,21 +9,25 @@ int main()
 
     string cadena;
 
-    cin >> cadena;
+    getline(cin, cadena);
 
-    cout << cadena.size();
-
-    for (int i = 0; i < cadena.length(); i++)
+    for (int i = 0; i < cadena.size(); i++)
     {
-        if (cadena[i] == 1)
+        if (cadena[i] == '0')
+        {
+            cout << 1;
+        }
+        else if (cadena[i] == '1')
         {
             cout << 0;
         }
-        if (cadena[i] == 0)
+        else
         {
-            cout << 0;
+            cout << " ";
         }
     }
+
+    cout << endl;
 
     return 0;
 }

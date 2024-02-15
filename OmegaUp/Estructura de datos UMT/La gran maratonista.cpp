@@ -7,11 +7,12 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    int n, d;
+    long int n, d;
 
     cin >> n >> d;
+    n = n * d;
 
-    cout << n * d << endl;
+    cout << n << endl;
 
     return 0;
 }

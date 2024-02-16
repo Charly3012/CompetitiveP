@@ -3,6 +3,21 @@
 
 using namespace std;
 
+void swap(int &a, int &b);
+int particion(vector<int> &arr, int primero, int final);
+void quicksort(vector<int> &arr, int primero, int final);
+void imprimirArreglo(const vector<int> &arr);
+
+int main()
+{
+    vector<int> arr = {10, 7, 8, 9, 1, 5};
+    int n = arr.size();
+    quicksort(arr, 0, n - 1); //(arreglo a ordenar, indice del primer elemento a ordenar, indicie del ultimo elemento a ordenar)
+    cout << "Arreglo ordenado: " << endl;
+    imprimirArreglo(arr);
+    return 0;
+}
+
 // Función para intercambiar dos elementos del arreglo
 void swap(int &a, int &b)
 {
@@ -41,21 +56,11 @@ void quicksort(vector<int> &arr, int primero, int final)
 }
 
 // Función para imprimir el arreglo
-void printArray(const vector<int> &arr)
+void imprimirArreglo(const vector<int> &arr)
 {
     for (int num : arr)
     {
         cout << num << " ";
     }
     cout << endl;
-}
-
-int main()
-{
-    vector<int> arr = {10, 7, 8, 9, 1, 5};
-    int n = arr.size();
-    quicksort(arr, 0, n - 1); //(arreglo a ordenar, indice del primer elemento a ordenar, indicie del ultimo elemento a ordenar)
-    cout << "Arreglo ordenado: " << endl;
-    printArray(arr);
-    return 0;
 }

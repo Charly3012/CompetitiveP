@@ -1,3 +1,6 @@
+
+// Esta solución esta incompleta, solo quedo como idea pero de seguro algo se podra rescatar
+
 #include <vector>
 #include <unordered_map>
 #include <bits/stdc++.h>
@@ -31,7 +34,7 @@ int main()
         cout << frecuencia[k] << endl;
         if (frecuencia[k] > max)
         {
-            max = frecuencia
+            // max = frecuencia;
         }
         if (frecuencia[k] == max && frecuencia[k] > 0)
         {

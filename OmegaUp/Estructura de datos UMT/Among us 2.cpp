@@ -12,6 +12,7 @@ int main()
     int n, max = 0, vmax, chequeo;
     vector<int> vec;
     cin >> n;
+    unordered_map<int, int> frecuencia;
 
     for (int i = 0; i < n; i++)
     {
@@ -19,8 +20,6 @@ int main()
         cin >> aux;
         vec.emplace_back(aux);
     }
-
-    unordered_map<int, int> frecuencia;
 
     for (int j = 0; j < n; j++)
     {

@@ -19,7 +19,7 @@ int main()
 
     promedio = promedio / 7;
 
-    cout << fixed << setprecision(1) << round(promedio)  << endl;
+    cout << fixed << setprecision(1) << round(promedio*10)/10  << endl;
 
     return 0;
 }

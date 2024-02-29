@@ -27,9 +27,12 @@ int main()
             break;
 
         case 2:
-            tacosVendidos += cola.front();
-            // tacosVendidos = tacosVendidos + cola.front();
-            cola.pop();
+            if (!cola.empty())
+            {
+                tacosVendidos += cola.front();
+                // tacosVendidos = tacosVendidos + cola.front();
+                cola.pop();
+            }
 
             break;
 
@@ -38,7 +41,7 @@ int main()
 
             break;
 
-        default:
+        case 4:
             cout << tacosVendidos << endl;
             break;
         }

@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "e:/Repositorios/CompetitiveP",
-      "program": "e:/Repositorios/CompetitiveP/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "/home/charly/Repositorios/CompetitiveP/OmegaUp/Estructura de datos UMT",
+      "program": "/home/charly/Repositorios/CompetitiveP/OmegaUp/Estructura de datos UMT/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

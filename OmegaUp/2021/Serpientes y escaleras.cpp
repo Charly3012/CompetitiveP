@@ -1,3 +1,6 @@
+// Problema: Escaleras y serpientes
+// https://omegaup.com/course/ResolviendoProblemas2021/assignment/P6#problems/Escaleras-y-Serpientes
+
 #include <bits/stdc++.h>
 using namespace std;
 
